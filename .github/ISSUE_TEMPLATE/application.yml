@@ -1,0 +1,85 @@
+name: "🖥 ServerHive OSS Server Application"
+description: "Apply for a free ServerHive build server for AOSP ROM development."
+title: "[Server Request] ROM Name - Developer Name"
+labels: ["server application"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🚀 ServerHive OSS Support Program
+        Thank you for applying for a **free build server** to support open-source Android development.
+
+        ✅ **Requirements:**  
+        - You must be an **active AOSP/ROM developer**.  
+        - Your ROM sources must be **publicly available on GitHub/GitLab**.  
+        - The server must be used **only for ROM development purposes**.
+
+        ℹ️ **Note:** Applications without valid sources may be rejected.
+
+  - type: input
+    id: dev_name
+    attributes:
+      label: "👤 Developer Name"
+      description: "Enter your developer name or alias."
+      placeholder: "SaiKrishna"
+    validations:
+      required: true
+
+  - type: input
+    id: telegram
+    attributes:
+      label: "📲 Developer Contact (Telegram)"
+      description: "Your Telegram username."
+      placeholder: "@username"
+    validations:
+      required: true
+
+  - type: input
+    id: github
+    attributes:
+      label: "🔗 GitHub Profile"
+      description: "Link to your GitHub profile."
+      placeholder: "https://github.com/username"
+    validations:
+      required: true
+
+  - type: input
+    id: rom_name
+    attributes:
+      label: "📱 ROM Name"
+      description: "Name of the ROM you maintain."
+      placeholder: "LineageOS / PixelOS / AxionAOSP"
+    validations:
+      required: true
+
+  - type: input
+    id: rom_source
+    attributes:
+      label: "📂 ROM Source Repository"
+      description: "Link to the ROM organization or source repository."
+      placeholder: "https://github.com/ROM-Organization"
+    validations:
+      required: true
+
+  - type: input
+    id: maint_time
+    attributes:
+      label: "⏳ How long have you been maintaining this ROM?"
+      description: "Mention your maintenance duration."
+      placeholder: "Example: 6 months / 1 year / 2 years"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: "⚠️ Agreement"
+      description: "By submitting this application, you agree to the following:"
+      options:
+        - label: "I confirm that I am an active ROM developer."
+          required: true
+        - label: "I will only use the server for ROM development purposes."
+          required: true
+        - label: "I understand that inactive usage may result in server revocation."
+          required: true
