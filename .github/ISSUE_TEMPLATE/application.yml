@@ -39,15 +39,6 @@ body:
       required: true
 
   - type: input
-    id: github
-    attributes:
-      label: "🔗 GitHub Profile"
-      description: "Link to your GitHub profile."
-      placeholder: "https://github.com/username"
-    validations:
-      required: true
-
-  - type: input
     id: rom_name
     attributes:
       label: "📱 ROM Name"
