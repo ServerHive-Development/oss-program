@@ -2,6 +2,9 @@ name: "🖥 ServerHive OSS Server Application"
 description: "Apply for a free ServerHive build server for AOSP ROM development."
 title: "[Server Request] ROM Name - Developer Name"
 labels: ["server application"]
+assignees:
+  - Saikrishna1504
+  - Shra1V32
 
 body:
   - type: markdown
@@ -59,6 +62,15 @@ body:
       label: "📂 ROM Source Repository"
       description: "Link to the ROM organization or source repository."
       placeholder: "https://github.com/ROM-Organization"
+    validations:
+      required: true
+
+  - type: input
+    id: device_name
+    attributes:
+      label: "📱 Device Name / Codename"
+      description: "Device you maintain for this ROM."
+      placeholder: "Example: Redmi Note 8 Pro (begonia)"
     validations:
       required: true
 
